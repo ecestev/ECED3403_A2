@@ -1,0 +1,9 @@
+----------------------------------------
+ PROCESSING DEVICE READ/WRITE OPERATIONS
+----------------------------------------
+INPUT   SYS_CLK:   46   MEMORY_LOC: 0x01 CHANGED FROM: 0x00 TO: 0x33   READ FROM DEV: 0
+INPUT   SYS_CLK:  101   MEMORY_LOC: 0x03 CHANGED FROM: 0x00 TO: 0x37   READ FROM DEV: 1
+INPUT   SYS_CLK:  200   MEMORY_LOC: 0x05 CHANGED FROM: 0x00 TO: 0x38   READ FROM DEV: 2
+OUTPUT  SYS_CLK:  354   OUT_DATA:   0x33                               WRITTEN TO DEV: 3
+OUTPUT  SYS_CLK:  429   OUT_DATA:   0x37                               WRITTEN TO DEV: 4
+OUTPUT  SYS_CLK:  548   OUT_DATA:   0x38                               WRITTEN TO DEV: 5

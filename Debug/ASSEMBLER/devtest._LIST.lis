@@ -1,0 +1,27 @@
+ADDRESS  MNEM        OP1        OP2    MACHINE INST
+
+0000     BYTE          0               00
+0001     BYTE          0               00
+0002     BYTE          0               00
+0003     BYTE          0               00
+0004      EQU        $10               
+0004      EQU        $03               
+0004      EQU        $01               
+0004      EQU          0               
+0004      EQU          1               
+0004      ORG      $1000               
+1000      MOV     #OUTIA      OutSC    40F00001FFFFEFFE
+1006      MOV      #INIA       InSC    40F00003FFFFEFFA
+100C      MOV    &InData        R10    425A0003
+1010      MOV      #TRUE        R14    407E0001
+1014      MOV     #FALSE        R15    407F0000
+1018      BIS         #8         R2    D0320008
+101C      BIS      #COFF         R2    D0320010
+1020      CMP     #FALSE        R14    907E0000
+1024      JNZ     RdLoop               23FD
+1026      MOV      #TRUE        R14    407E0001
+102A      CMP     #FALSE        R15    907F0000
+102E      JNZ     WrLoop               23FD
+1030      MOV        R10    OutData    4AC0FFFFEFCF
+1034      MOV      #TRUE        R15    407F0001
+1038      JMP       Loop               3FF1

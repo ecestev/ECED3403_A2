@@ -1,0 +1,22 @@
+ ----------------------------------------------------------
+                     STARTING FIRST PASS                   
+ ----------------------------------------------------------
+
+ Parsing HUGHES.asm and Identifying Records
+ Successfully parsed HUGHES.asm
+ Number of Errors: 0
+ Number of Unknown Labels: 0
+
+
+ ----------------------------------------------------------
+                    STARTING SECOND PASS                   
+ ----------------------------------------------------------
+
+EMIT S1REC
+EMIT S5REC
+EMIT S9REC
+
+ ----------------------------------------------------------
+                       END OF PROGRAM                      
+ ----------------------------------------------------------
+

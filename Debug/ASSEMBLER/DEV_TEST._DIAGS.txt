@@ -1,0 +1,117 @@
+ ----------------------------------------------------------
+                     STARTING FIRST PASS                   
+ ----------------------------------------------------------
+
+ Parsing DEV_TEST.asm and Identifying Records
+ Line: 1 - Ignored Due To: Comment
+ Line: 2 - Ignored Due To: Comment
+ Line: 3 - Ignored Due To: Comment
+ Line: 4 - Ignored Due To: Comment
+ Line: 5 - Ignored Due To: Comment
+ Line: 6 - Ignored Due To: Comment
+ Line: 7 - Ignored Due To: Comment
+ Line: 8 - Ignored Due To: Comment
+ Line: 9 - Ignored Due To: Comment
+ Line: 10 - Ignored Due To: Comment
+ Line: 11 - Ignored Due To: Comment
+ Line: 12 - Ignored Due To: Comment
+ Line: 13 - Ignored Due To: Comment
+ Line: 14 - Ignored Due To: Comment
+ Line: 15 - Ignored Due To: Comment
+ Line: 16 - Ignored Due To: Comment
+ Line: 17 - Ignored Due To: Comment
+ Line: 18 - Ignored Due To: Comment
+ Line: 19 - Ignored Due To: Comment
+ Line: 20 - Ignored Due To: Comment
+ Line: 21 - Ignored Due To: Comment
+ Line: 22 - Ignored Due To: Comment
+ Line: 23 - Ignored Due To: Comment
+ Line: 24 - Ignored Due To: Comment
+ Line: 25 - Ignored Due To: Comment
+ Line: 26 - Ignored Due To: Comment
+ Line: 27 - Ignored Due To: Comment
+ Line: 28 - Ignored Due To: Comment
+ Line: 29 - Ignored Due To: Comment
+ Line: 30 - Ignored Due To: Comment
+ Line: 31 - Ignored Due To: Comment
+ Line: 32 - Ignored Due To: Comment
+ Line: 33 - Ignored Due To: Comment
+ Line: 34 - Ignored Due To: Comment
+ Line: 35 - Ignored Due To: Comment
+ Line: 36 - Ignored Due To: Comment
+ Line: 37 - Ignored Due To: Comment
+ Line: 38 - Ignored Due To: Comment
+ Line: 39 - Ignored Due To: Comment
+ Line: 40 - Ignored Due To: Comment
+ Line: 41 - Ignored Due To: Comment
+ Line: 42 - Ignored Due To: Comment
+ Line: 43 - Ignored Due To: Comment
+ Line: 44 - Ignored Due To: Comment
+ Line: 45 - Ignored Due To: Comment
+ Line: 46 - Ignored Due To: Comment
+ Line: 47 - Ignored Due To: Comment
+ Line: 48 - Ignored Due To: Comment
+ Line: 49 - Ignored Due To: Comment
+ Line: 50 - Ignored Due To: Comment
+ Line: 51 - Ignored Due To: Comment
+ Line: 52 - Ignored Due To: Comment
+ Line: 53 - Ignored Due To: Comment
+ Line: 54 - Ignored Due To: Comment
+ Line: 55 - Ignored Due To: Comment
+ Line: 56 - Ignored Due To: Comment
+ Line: 57 - Ignored Due To: EMPTY LINE
+ Line: 70 - Ignored Due To: EMPTY LINE
+ Line: 77 - Ignored Due To: EMPTY LINE
+ Line: 79 - Ignored Due To: EMPTY LINE
+ Line: 80 - Ignored Due To: EMPTY LINE
+ Line: 81 - Ignored Due To: EMPTY LINE
+ Line: 83 - Ignored Due To: EMPTY LINE
+ Line: 90 - Ignored Due To: EMPTY LINE
+ Line: 97 - Ignored Due To: EMPTY LINE
+ Line: 99 - Ignored Due To: EMPTY LINE
+ Line: 100 - Ignored Due To: EMPTY LINE
+ Line: 101 - Ignored Due To: EMPTY LINE
+ Line: 105 - Ignored Due To: EMPTY LINE
+ Line: 106 - Ignored Due To: EMPTY LINE
+ Line: 108 - Ignored Due To: EMPTY LINE
+ Line: 109 - Ignored Due To: EMPTY LINE
+ Line: 111 - Ignored Due To: EMPTY LINE
+ Line: 112 - Ignored Due To: EMPTY LINE
+ Line: 113 - Ignored Due To: EMPTY LINE
+ Line: 117 - Ignored Due To: EMPTY LINE
+ Line: 118 - Ignored Due To: EMPTY LINE
+ Line: 122 - Ignored Due To: EMPTY LINE
+ Line: 123 - Ignored Due To: EMPTY LINE
+ Line: 127 - Ignored Due To: EMPTY LINE
+ Line: 128 - Ignored Due To: EMPTY LINE
+ Line: 132 - Ignored Due To: EMPTY LINE
+ Line: 133 - Ignored Due To: EMPTY LINE
+ Line: 137 - Ignored Due To: EMPTY LINE
+ Line: 138 - Ignored Due To: EMPTY LINE
+ Line: 142 - Ignored Due To: EMPTY LINE
+ Line: 144 - Ignored Due To: EMPTY LINE
+ Line: 151 - Ignored Due To: EMPTY LINE
+ Successfully parsed DEV_TEST.asm
+ Number of Errors: 0
+ Number of Unknown Labels: 0
+
+
+ ----------------------------------------------------------
+                    STARTING SECOND PASS                   
+ ----------------------------------------------------------
+
+EMIT S1REC
+EMIT S1REC
+EMIT S1REC
+EMIT S1REC
+EMIT S1REC
+EMIT S1REC
+EMIT S1REC
+EMIT S1REC
+EMIT S5REC
+EMIT S9REC
+
+ ----------------------------------------------------------
+                       END OF PROGRAM                      
+ ----------------------------------------------------------
+

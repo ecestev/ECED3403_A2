@@ -1,0 +1,49 @@
+ ----------------------------------------------------------
+                        SYMBOL TABLE                       
+ ----------------------------------------------------------
+
+ ENTRY     LABEL     TYPE      LOCATION COUNTER
+
+ 1         R0        REGISTER   0     |  0x0
+ 2         R1        REGISTER   1     |  0x1
+ 3         R2        REGISTER   2     |  0x2
+ 4         R3        REGISTER   3     |  0x3
+ 5         R4        REGISTER   4     |  0x4
+ 6         R5        REGISTER   5     |  0x5
+ 7         R6        REGISTER   6     |  0x6
+ 8         R7        REGISTER   7     |  0x7
+ 9         R8        REGISTER   8     |  0x8
+ 10        R9        REGISTER   9     |  0x9
+ 11        R10       REGISTER   10    |  0xa
+ 12        R11       REGISTER   11    |  0xb
+ 13        R12       REGISTER   12    |  0xc
+ 14        R13       REGISTER   13    |  0xd
+ 15        R14       REGISTER   14    |  0xe
+ 16        R15       REGISTER   15    |  0xf
+ 17        zeroSC    KNOWN      0     |  0x0
+ 18        zeroDR    KNOWN      1     |  0x1
+ 19        oneSC     KNOWN      2     |  0x2
+ 20        oneDR     KNOWN      3     |  0x3
+ 21        twoSC     KNOWN      4     |  0x4
+ 22        twoDR     KNOWN      5     |  0x5
+ 23        threeSC   KNOWN      6     |  0x6
+ 24        threeDR   KNOWN      7     |  0x7
+ 25        fourSC    KNOWN      8     |  0x8
+ 26        fourDR    KNOWN      9     |  0x9
+ 27        fiveSC    KNOWN      10    |  0xa
+ 28        fiveDR    KNOWN      11    |  0xb
+ 29        ISR0TEMPDATAKNOWN      50    |  0x32
+ 30        ISR1TEMPDATAKNOWN      50    |  0x32
+ 31        ISR2TEMPDATAKNOWN      50    |  0x32
+ 32        ISR3TEMPDATAKNOWN      50    |  0x32
+ 33        ISR4TEMPDATAKNOWN      50    |  0x32
+ 34        ISR5TEMPDATAKNOWN      50    |  0x32
+ 35        main      KNOWN      256   |  0x100
+ 36        Loop      KNOWN      330   |  0x14a
+ 37        final     KNOWN      340   |  0x154
+ 38        zeroISR   KNOWN      512   |  0x200
+ 39        oneISR    KNOWN      524   |  0x20c
+ 40        twoISR    KNOWN      536   |  0x218
+ 41        threeISR  KNOWN      548   |  0x224
+ 42        fourISR   KNOWN      560   |  0x230
+ 43        fiveISR   KNOWN      572   |  0x23c

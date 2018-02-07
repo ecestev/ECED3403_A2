@@ -1,0 +1,69 @@
+switch ((mode = sd_am[asd][regnum])) {
+		
+		case REG:	// EA = Rn
+//			cout << "R" << regnum << endl;
+			operand = registers[regnum];
+//			cout << "Operand is in R" << regnum << endl;
+//			cout << "OPERAND is: $" << HEX4(operand) << endl;
+			break;
+
+		case INDX:	// EA = Rn + [PC]	
+			MBR_RD(registers[PC], x, WORD);
+			MBR_RD((registers[regnum]+x), operand, WORD);
+//			cout << "$" << hex << x << "(R" << regnum << ")" << endl;
+//			cout << "EA = [Rn] + [PC]: = $" << registers[regnum] << " + $" << x << " = $" << HEX4(x + registers[regnum]) << endl;
+//			cout << "OPERAND = memory[$" << HEX4(x + registers[regnum]) << "] = $" << HEX4(operand) << endl;
+//			registers[0] += 2;
+			break;
+		
+		case REL:	// EA = PC + [PC]
+			MBR_RD(registers[PC], x, WORD);
+			MBR_RD((registers[PC] + x), operand, WORD);
+//			cout << "$" << endl;
+//			cout << "PC = " << HEX4(registers[PC]) << endl;
+//			cout << "OFFSET = calculated in function" << endl;
+//			cout << "OPERAND = $" << operand << endl;
+//			registers[0] += 2;
+			break;
+		
+		case ABS:	// EA = [PC]
+			MBR_RD(registers[PC], x, WORD);
+			MBR_RD(x, operand, WORD);
+//			cout << "&$" << hex << x << endl;
+//			cout << "EA = [PC] = $" << HEX4(memory[registers[PC]]) << endl;
+//			cout << "OPERAND is = memory[$" << HEX4(memory[registers[PC]]) << "] = $" << HEX4(operand) << endl;
+			registers[0] += 2;
+			break;
+		
+		case IND:	// EA = [Rn]		
+			MBR_RD(registers[regnum], operand, WORD);
+//			cout << "@R" << regnum << endl;
+//			cout << "EA = [Rn] = [R" << regnum << "] = $" << HEX4(registers[regnum]) <<  endl;
+//			cout << "OPERAND = memory[$" << registers[regnum] << "] = $" << HEX4(operand) << endl;
+			break;
+	
+		case INDI:	// EA = [Rn]
+			MBR_RD(registers[regnum], operand, WORD);
+			// NOW NEED TO INCREMENT REGISTER VALUE... HOW?
+			registers[regnum] += 2;
+//			cout << "@R" << regnum << "+" << endl;
+//			cout << "EA = [Rn] = [R" << regnum << "] = $" << HEX4(registers[regnum]) << endl;
+//			cout << "OPERAND = memory[$" << registers[regnum] << "] = $" << HEX4(operand) << endl;
+			break;
+		
+		case IMM:	// EA = PC			
+			MBR_RD(registers[PC], operand, WORD);
+//			cout << "#$" << HEX4(operand) << endl;
+//			cout << "EA = PC = $" << registers[PC] << endl;
+//			cout << "Operand = memory[$" << HEX4(registers[PC]) << "] = $" << HEX4(operand) << endl;
+			registers[0] += 2;
+			break;
+		
+		default:
+//			cout << "Constant ";
+			/* Constants - convert encoding to binary */
+			operand = mode & 0x0f;
+			if (operand == 0x0f)
+				operand = -1;
+			break;
+	}

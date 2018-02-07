@@ -1,0 +1,65 @@
+ADDRESS  MNEM        OP1        OP2    MACHINE INST
+
+0000     BYTE          0               00
+0001     BYTE          0               00
+0002     BYTE          0               00
+0003     BYTE          0               00
+0004     BYTE          0               00
+0005     BYTE          0               00
+0006     BYTE          0               00
+0007     BYTE          0               00
+0008     BYTE          0               00
+0009     BYTE          0               00
+000A     BYTE          0               00
+000B     BYTE          0               00
+000C      EQU         50               
+000C      EQU         50               
+000C      EQU         50               
+000C      EQU         50               
+000C      EQU         50               
+000C      EQU         50               
+000C      ORG       $100               
+0100      MOV     #$FFC0         R1    4031FFC0
+0104      MOV         #3    &zeroSC    40B200030000
+010A      MOV         #3     &oneSC    40B200030002
+0110      MOV         #3     &twoSC    40B200030004
+0116      MOV         #1   &threeSC    40B200010006
+011C      MOV         #1    &fourSC    40B200010008
+0122      MOV         #1    &fiveSC    40B20001000A
+0128      MOV       #$25   &threeDR    40B200250007
+012E      ADD         #1         R5    50350001
+0132      MOV       #$50    &fourDR    40B200500009
+0138      ADD         #1         R5    50350001
+013C      MOV       #$75    &fiveDR    40B20075000B
+0142      ADD         #1         R5    50350001
+0146      BIS         #8         R2    D0320008
+014A      ADD         #1         R6    50360001
+014E      CMP       #$0A         R6    9036000A
+0152      JNE       Loop               23FB
+0154      JMP      final               3FFF
+0156      ORG       $200               
+0200      MOV    &zeroDR   &threeDR    429200010007
+0206      ADD         #2         R7    50370002
+020A     RETI                          1300
+020C      MOV     &oneDR    &fourDR    429200030009
+0212      ADD         #2         R8    50380002
+0216     RETI                          1300
+0218      MOV     &twoDR    &fiveDR    42920005000B
+021E      ADD         #2         R9    50390002
+0222     RETI                          1300
+0224      MOV   &threeDR &ISR3TEMPDATA    429200070032
+022A      ADD         #2        R10    503A0002
+022E     RETI                          1300
+0230      MOV    &fourDR &ISR4TEMPDATA    429200090032
+0236      ADD         #2        R11    503B0002
+023A     RETI                          1300
+023C      MOV    &fiveDR &ISR5TEMPDATA    4292000B0032
+0242      ADD         #2        R12    503C0002
+0246     RETI                          1300
+0248      ORG      $FFC0               
+FFC0     WORD        512               0200
+FFC2     WORD        524               020C
+FFC4     WORD        536               0218
+FFC6     WORD        548               0224
+FFC8     WORD        560               0230
+FFCA     WORD        572               023C

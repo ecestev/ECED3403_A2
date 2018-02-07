@@ -1,0 +1,34 @@
+ ----------------------------------------------------------
+                        SYMBOL TABLE                       
+ ----------------------------------------------------------
+
+ ENTRY     LABEL     TYPE      LOCATION COUNTER
+
+ 1         R0        REGISTER   0     |  0x0
+ 2         R1        REGISTER   1     |  0x1
+ 3         R2        REGISTER   2     |  0x2
+ 4         R3        REGISTER   3     |  0x3
+ 5         R4        REGISTER   4     |  0x4
+ 6         R5        REGISTER   5     |  0x5
+ 7         R6        REGISTER   6     |  0x6
+ 8         R7        REGISTER   7     |  0x7
+ 9         R8        REGISTER   8     |  0x8
+ 10        R9        REGISTER   9     |  0x9
+ 11        R10       REGISTER   10    |  0xa
+ 12        R11       REGISTER   11    |  0xb
+ 13        R12       REGISTER   12    |  0xc
+ 14        R13       REGISTER   13    |  0xd
+ 15        R14       REGISTER   14    |  0xe
+ 16        R15       REGISTER   15    |  0xf
+ 17        OutSC     KNOWN      0     |  0x0
+ 18        OutData   KNOWN      1     |  0x1
+ 19        InSC      KNOWN      2     |  0x2
+ 20        InData    KNOWN      3     |  0x3
+ 21        COFF      KNOWN      16    |  0x10
+ 22        INIA      KNOWN      3     |  0x3
+ 23        OUTIA     KNOWN      1     |  0x1
+ 24        FALSE     KNOWN      0     |  0x0
+ 25        TRUE      KNOWN      1     |  0x1
+ 26        Loop      KNOWN      4124  |  0x101c
+ 27        RdLoop    KNOWN      4128  |  0x1020
+ 28        WrLoop    KNOWN      4138  |  0x102a

@@ -1,0 +1,39 @@
+// Mason's Union for byte/word addressable memory
+// MemoryOverlay mem;
+// mem.memoryByte[100]
+// mem.memoryWord[50]
+//union MemoryOverlay
+//{
+//	unsigned char memoryByte[65536];
+//	unsigned short memoryWord[32768];
+//};
+
+
+
+
+
+
+
+
+ //uint16_t registers[16] = {
+//	 0xFFBE, 0xFFBE, 0x000D, 0x0000,
+//	 0x0FFE, 0x00FF, 0xC555, 0xFF80,
+//	 0,		 0xF000, 0x0F00, 0x00F0,
+//	 0x000F, 0x000F, 0x000F, 0x000F
+//	 };
+
+// init for one operand tests
+//uint16_t registers[16] = {
+//		0,      0xFFC0, 0x0008, 0,
+//		4094,   0xFF00, 0x8AAB, 0x0080,
+//		0,      0xF000, 0x0F00, 0x00F0,
+//		0x000F, 0x000F, 0x000F, 0x000F
+//	 };
+
+// init for two operand tests
+//uint16_t registers[16] = {
+//	0xFFBE,	0xFFBE,	0x000D,	0x0000,
+//	0x1000,	0x00FF,	0xC555,	0xFF80,
+//	0x0000,	0xF000,	0x0F00,	0x00F0,
+//	0x000F,	0x000F,	0x000F,	0x000F
+//	};

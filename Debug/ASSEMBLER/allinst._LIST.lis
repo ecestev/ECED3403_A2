@@ -1,0 +1,26 @@
+ADDRESS  MNEM        OP1        OP2    MACHINE INST
+
+0000     BYTE        $01               01
+0001     BYTE        $5F               5F
+0002     BYTE        $03               03
+0003     BYTE        $F5               F5
+0004      ORG       $FFC               
+0FFC     WORD      $1357               1357
+0FFE     WORD      $1234               1234
+1000      ORG      $1000               
+1000      RRC       @R4+               1034
+1002     SWPB         R5               1085
+1004      RRA         R6               1106
+1006      SXT         R7               1187
+1008     PUSH         R7               1207
+100A      MOV     #$1234         R8    40381234
+100E      ADD         R6         R9    5609
+1010     ADDC         R6        R10    660A
+1012     SUBC         R6        R11    760B
+1014      SUB         R6        R12    860C
+1016      CMP         R5        R12    950C
+1018      BIT         R5        R12    B50C
+101A      BIC         R5        R13    C50D
+101C      BIS         R5        R14    D50E
+101E      XOR         R5        R15    E50F
+1020      AND     #$F0F0      &DATA    F0B2F0F00FFC

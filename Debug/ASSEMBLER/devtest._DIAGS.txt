@@ -1,0 +1,48 @@
+ ----------------------------------------------------------
+                     STARTING FIRST PASS                   
+ ----------------------------------------------------------
+
+ Parsing devtest.asm and Identifying Records
+ Line: 1 - Ignored Due To: Comment
+ Line: 2 - Ignored Due To: Comment
+ Line: 3 - Ignored Due To: Comment
+ Line: 4 - Ignored Due To: EMPTY LINE
+ Line: 9 - Ignored Due To: EMPTY LINE
+ Line: 15 - Ignored Due To: EMPTY LINE
+ Line: 16 - Ignored Due To: Comment
+ Line: 17 - Ignored Due To: Comment
+ Line: 18 - Ignored Due To: Comment
+ Line: 19 - Ignored Due To: EMPTY LINE
+ Line: 21 - Ignored Due To: EMPTY LINE
+ Line: 22 - Ignored Due To: Comment
+ Line: 23 - Ignored Due To: Comment
+ Line: 24 - Ignored Due To: Comment
+ Line: 25 - Ignored Due To: EMPTY LINE
+ Line: 31 - Ignored Due To: EMPTY LINE
+ Line: 32 - Ignored Due To: Comment
+ Line: 33 - Ignored Due To: Comment
+ Line: 34 - Ignored Due To: Comment
+ Line: 35 - Ignored Due To: EMPTY LINE
+ Line: 38 - Ignored Due To: Comment
+ Line: 42 - Ignored Due To: Comment
+ Line: 47 - Ignored Due To: Comment
+ Line: 49 - Ignored Due To: EMPTY LINE
+ Successfully parsed devtest.asm
+ Number of Errors: 0
+ Number of Unknown Labels: 0
+
+
+ ----------------------------------------------------------
+                    STARTING SECOND PASS                   
+ ----------------------------------------------------------
+
+EMIT S1REC
+EMIT S1REC
+EMIT S1REC
+EMIT S5REC
+EMIT S9REC
+
+ ----------------------------------------------------------
+                       END OF PROGRAM                      
+ ----------------------------------------------------------
+
